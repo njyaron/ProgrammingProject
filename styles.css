@@ -2,7 +2,7 @@ body {
     background-color: rgba(0,0,0,0.17);
 }
 
-#tableBoard{
+#boardTable{
   background-color: rgba(0,0,70,0.3);
   border-spacing: 9px;
   border-radius: 5px;
@@ -10,7 +10,11 @@ body {
   margin-right: auto;
 }
 
-#tableBoard td {
+.blurred {
+  opacity: 0.4;
+}
+
+#boardTable td {
 	width: 90px;
 	height: 90px;
 	background-color: rgba(0,0,70,0.15);
