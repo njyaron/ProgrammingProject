@@ -2,7 +2,7 @@ body {
     background-color: rgba(0,0,0,0.17);
 }
 
-#XO{
+#tableBoard{
   background-color: rgba(0,0,70,0.3);
   border-spacing: 9px;
   border-radius: 5px;
@@ -10,7 +10,7 @@ body {
   margin-right: auto;
 }
 
-#XO td {
+#tableBoard td {
 	width: 90px;
 	height: 90px;
 	background-color: rgba(0,0,70,0.15);
@@ -23,6 +23,5 @@ body {
 }
 
 #insructions {
-  height: 15vh;
-
+  /* height: 15vh; */
 }
