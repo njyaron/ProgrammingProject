@@ -19,6 +19,7 @@ function waitForOpponent(idx) {
 		//$("#waitingSlide").css("visibility", "hidden");
 		$("#waitingSlide").slideUp();
 		loadBoard();
+		startGame();
 	}
 	else {
 		var txt = "waiting for opponent" + ".".repeat(idx);
@@ -39,7 +40,7 @@ function blurBoard() {
 
 function cellPressed(cell) {
 	if (isMyTurn() && cell.value == "") {
-		
+
 	}
 }
 
@@ -59,7 +60,8 @@ function createTable(){
 function loadBoard() {
 	var tbl = createTable();
 	tbl.id = "boardTable";
-	$("#board").append(tbl);
+	$("#boardTableDiv").append(tbl);
+	$("#board").slideDown();
 }
 
 function register() {
@@ -72,9 +74,12 @@ function register() {
 
 	//get opponent id+name from server
 	opponentChanged = false;
-	waitForOpponent(0);
-	$("#waitingSlide").css("visibility", "visible");
+	$("#waitingSlide").show();
 	$("#waitingSlide").slideDown();
+	waitForOpponent(0);
+}
 
+function startGame() {
 	//Say that a match was found and start game
+
 }

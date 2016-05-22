@@ -29,3 +29,20 @@ body {
 #insructions {
   /* height: 15vh; */
 }
+
+#board {
+  position: relative;
+}
+
+#boardTableDiv {
+  position: absolute;
+}
+
+#gameOverText {
+  position: absolute;
+}
+
+.letterPhoto {
+  width: 32px;
+  height: 32px;
+}

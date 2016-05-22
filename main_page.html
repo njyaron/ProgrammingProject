@@ -8,23 +8,37 @@
 <script src="scripts.js"> </script>
 
 <body>
-	<div id="insructions">
-		<p> The rules of the game are: ... </p>
-		<p> But first, you need to register with your name </p>
-	</div>
 
 	<div id="getName">
-		<p> Enter your name : </p>
-		<input type="text" name="name" value="" onchange="register()">
+		<p> Enter your name : <input type="text" name="name" value="" onchange="register()"> </p>
 	</div>
 
-	<div id="waitingSlide" style="visibility:hidden;">
-		<p id="waitingText"> </p>
+	<div id="waitingSlide" style="display:none;">
+		<p id="welcomeText"> </p> <!-- Hello Nir! -->
+		<p id="waitingText"> </p> <!-- Waiting for an opponent... -->
 	</div>
 
-	<div id="board">
+	<div id="board" style="display:none;">
+		<div id="myTitle">
+			<img class="letterPhoto" src="photos\X.png" alt="X">
+			<p id="myNameTitle"> </p>
+		</div>
+
+		<div id="opponentTitle">
+			<img class="letterPhoto" src="photos\O.png" alt="O">
+			<p id="opponentNameTitle"> </p>
+		</div>
+
+		<div id="boardTableDiv">
+		</div>
+
+		<div id="gameOverText" style="display:none;">
+			<p> Game Over... </p>
+			<button type="button">Click Me!</button>
+		</div>
 	</div>
 
+<br><br><br><br><br><br>
 	//Temporary
 	<div id="getOpponentName">
 		<p> Enter enemy name : </p>
