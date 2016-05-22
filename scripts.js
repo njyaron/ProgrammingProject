@@ -58,9 +58,9 @@ function createTable(){
 }
 
 function loadBoard() {
-	var tbl = createTable();
-	tbl.id = "boardTable";
-	$("#boardTableDiv").append(tbl);
+	//var tbl = createTable();
+	//tbl.id = "boardTable";
+	//$("#boardTableDiv").append(tbl);
 	$("#board").slideDown();
 }
 

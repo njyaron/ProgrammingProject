@@ -1,5 +1,42 @@
+.blurred {
+  opacity: 0.4;
+}
 body {
     background-color: rgba(0,0,0,0.17);
+}
+
+#boardHeader {
+  height: 32px;
+  margin-left: 52px;
+  margin-right: 52px;
+  line-height: 40px;
+  padding-bottom: 8px;
+}
+#myTitle{
+  height: inherit;
+  float: left;
+}
+#opTitle{
+  height: inherit;
+  float: right;
+}
+#myPhoto, #opPhoto {
+  max-width: 100%;
+  max-height: 100%;
+}
+#myNameTitle, #opNameTitle {
+  font-size: 25px;
+  font-family: cursive;
+  position: relative;
+  top: -25%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#board {
+  width:400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #boardTable{
@@ -9,40 +46,15 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-.blurred {
-  opacity: 0.4;
-}
-
 #boardTable td {
-	width: 90px;
-	height: 90px;
-	background-color: rgba(0,0,70,0.15);
+  width: 90px;
+  height: 90px;
+  background-color: rgba(0,0,70,0.15);
   border-radius: 5px;
-  font-size: 80px;
-  text-align: center;
-  /*font-weight: bold;*/
-  font-family: Sans-serif;
-  /*border: 5px none rgba(0,0,70,0.15);*/
 }
 
-#insructions {
-  /* height: 15vh; */
-}
 
-#board {
-  position: relative;
-}
-
-#boardTableDiv {
-  position: absolute;
-}
 
 #gameOverText {
   position: absolute;
-}
-
-.letterPhoto {
-  width: 32px;
-  height: 32px;
 }

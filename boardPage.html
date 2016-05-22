@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Waiting page</title>
+<meta name="author" content="Nir Yaron">
+<!--link rel="stylesheet" href="styles.css"-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="scripts.js"> </script>
+
+<style>
+	body {
+			background-color: rgba(0,0,0,0.17);
+	}
+
+	#board {
+		width:400px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	#boardHeader {
+	  height: 32px;
+		margin-left: 52px;
+		margin-right: 52px;
+		padding-bottom: 8px;
+	}
+	#myTitle{
+		height: inherit;
+	  float: left;
+	}
+	#opTitle{
+		height: inherit;
+	  float: right;
+	}
+	#myPhoto, #opPhoto {
+		max-width: 100%;
+    max-height: 100%;
+	}
+	#myNameTitle, #opNameTitle {
+		font-size: 25px;
+		font-family: cursive;
+		position: relative;
+		top: -25%;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+
+	#boardTable{
+	  background-color: rgba(0,0,70,0.3);
+	  border-spacing: 9px;
+	  border-radius: 5px;
+	  margin-left: auto;
+	  margin-right: auto;
+	}
+	#boardTable td {
+		width: 90px;
+		height: 90px;
+		background-color: rgba(0,0,70,0.15);
+	  border-radius: 5px;
+	}
+
+	#endGame{
+		display: inline-block;
+		position: absolute;
+		top: 35%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+</style>
+
+<body>
+	<div id="board">
+		<div id="boardHeader">
+			<span id="myTitle">
+				<img id="myPhoto" src="photos\X.png" alt="X">
+				<span id="myNameTitle"> Nir </span> <!-- Nir -->
+			</span>
+
+			<span id="opTitle">
+				<span id="opNameTitle"> Danon </span> <!-- Danon -->
+				<img id="opPhoto" src="photos\O.png" alt="O">
+			</span>
+		</div>
+
+
+		<div id="boardTableDiv">
+			<table id="boardTable">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="endGame">
+			<p id="endGameText"> You Win! </p> <!-- You Win! -->
+			<a id="playAgainButton">Play Again!</a>
+		</div>
+	</div>
+</body>
+</html>

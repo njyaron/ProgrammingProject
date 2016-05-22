@@ -18,23 +18,50 @@
 		<p id="waitingText"> </p> <!-- Waiting for an opponent... -->
 	</div>
 
+	<div id="myTurnInstructions" class="gameInstructions" style="display:none;">
+		<p> Press a cell to mark it yours </p>
+	</div>
+
+
 	<div id="board" style="display:none;">
-		<div id="myTitle">
-			<img class="letterPhoto" src="photos\X.png" alt="X">
-			<p id="myNameTitle"> </p>
+
+		<div id="boardHeader">
+			<span id="myTitle">
+				<img id="myPhoto" src="photos\X.png" alt="X">
+				<span id="myNameTitle"> </span> <!-- Nir -->
+			</span>
+
+			<span id="opTitle">
+				<span id="opNameTitle"> </span> <!-- Danon -->
+				<img id="opPhoto" src="photos\O.png" alt="O">
+			</span>
 		</div>
 
-		<div id="opponentTitle">
-			<img class="letterPhoto" src="photos\O.png" alt="O">
-			<p id="opponentNameTitle"> </p>
-		</div>
 
 		<div id="boardTableDiv">
+			<table id="boardTable">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
 		</div>
 
-		<div id="gameOverText" style="display:none;">
-			<p> Game Over... </p>
-			<button type="button">Click Me!</button>
+		<div id="endGame" style="display:none;">
+			<p id="endGameText"> </p> <!-- You Win! -->
+			<button type="button">Play Again!</button>
+
 		</div>
 	</div>
 
