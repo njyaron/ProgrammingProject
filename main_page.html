@@ -10,11 +10,11 @@
 <body>
 
 	<div id="getName">
-		<p> Enter your name : <input type="text" name="name" value="" onchange="register()"> </p>
+		<p> Enter your name : <input type="text" name="name" value="" onchange="register();"> </p>
 	</div>
 
 	<div id="waitingSlide" style="display:none;">
-		<p id="welcomeText"> </p> <!-- Hello Nir! -->
+		<p id="welcomeText"> </p> <!-- Hello! -->
 		<p id="waitingText"> </p> <!-- Waiting for an opponent... -->
 	</div>
 
@@ -41,27 +41,26 @@
 		<div id="boardTableDiv">
 			<table id="boardTable">
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td onclick="cellPressed(this);"></td>
+					<td onclick="cellPressed(this);"></td>
+					<td onclick="cellPressed(this);"></td>
 				</tr>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td onclick="cellPressed(this);"></td>
+					<td onclick="cellPressed(this);"></td>
+					<td onclick="cellPressed(this);"></td>
 				</tr>
 				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
+					<td onclick="cellPressed(this);"></td>
+					<td onclick="cellPressed(this);"></td>
+					<td onclick="cellPressed(this);"></td>
 				</tr>
 			</table>
 		</div>
 
 		<div id="endGame" style="display:none;">
-			<p id="endGameText"> </p> <!-- You Win! -->
-			<button type="button">Play Again!</button>
-
+			<p id="endGameText">  </p> <!-- You Win! -->
+			<a id="playAgainButton">Play Again!</a>
 		</div>
 	</div>
 
@@ -69,9 +68,15 @@
 	//Temporary
 	<div id="getOpponentName">
 		<p> Enter enemy name : </p>
-		<input type="text" name="opponentName" value="" onchange="opponentChanged = true;">
+		<input type="text" name="opponentName" value="" onchange="opponentChanged=true;">
 	</div>
 
+	<div id="getOpMove">
+		<p> Enter move : </p>
+		<input type="number" name="moveRow" min="1" max="3" onchange="moveRow=this.value;">
+		<input type="number" name="moveCol" min="1" max="3" onchange="moveCol=this.value;">
+		<input type="submit" value="Submit" onclick="gotMove=true;">
+	</div>
 
 </body>
 </html>
