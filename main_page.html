@@ -3,15 +3,15 @@
 <meta charset="utf-8">
 <title>Waiting page</title>
 <meta name="author" content="Nir Yaron">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="css/styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="scripts.js"> </script>
+<script src="js/scripts.js"> </script>
 
 
 <body>
 
 	<div id="getName">
-		<p> Enter your name : <input type="text" name="name" value="" onchange="register();"> </p>
+		Enter your name : <input id="userNameInput" type="text" name="name" value="" onchange="register();">
 	</div>
 
 	<div id="waitingSlide" style="display:none;">
@@ -28,13 +28,13 @@
 
 		<div id="boardHeader">
 			<span id="myTitle">
-				<img id="myPhoto" src="photos\X.png" alt="X">
+				<img id="myPhoto" src="img\X.png" alt="X">
 				<span id="myNameTitle"> </span> <!-- Nir -->
 			</span>
 
 			<span id="opTitle">
 				<span id="opNameTitle"> </span> <!-- Danon -->
-				<img id="opPhoto" src="photos\O.png" alt="O">
+				<img id="opPhoto" src="img\O.png" alt="O">
 			</span>
 		</div>
 
@@ -61,23 +61,8 @@
 
 		<div id="endGame" style="display:none;">
 			<p id="endGameText">  </p> <!-- You Win! -->
-			<a id="playAgainButton">Play Again!</a>
+			<button id="playAgainButton" onclick="replayGame();">Play Again!</a>
 		</div>
 	</div>
-
-<br><br><br><br><br><br>
-	//Temporary
-	<div id="getOpponentName">
-		<p> Enter enemy name : </p>
-		<input type="text" name="opponentName" value="" onchange="opponentChanged=true;">
-	</div>
-
-	<div id="getOpMove">
-		<p> Enter move : </p>
-		<input type="number" name="moveRow" min="1" max="3" onchange="moveRow=this.value;">
-		<input type="number" name="moveCol" min="1" max="3" onchange="moveCol=this.value;">
-		<input type="submit" value="Submit" onclick="gotMove=true;">
-	</div>
-
 </body>
 </html>

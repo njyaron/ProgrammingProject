@@ -1,0 +1,39 @@
+<div id="board" style="display:none;">
+  <div id="boardHeader">
+    <span id="myTitle">
+      <img id="myPhoto" src="img\X.png" alt="X">
+      <span id="myNameTitle"> </span> <!-- Nir -->
+    </span>
+
+    <span id="opTitle">
+      <span id="opNameTitle"> </span> <!-- Danon -->
+      <img id="opPhoto" src="img\O.png" alt="O">
+    </span>
+  </div>
+
+
+  <div id="boardTableDiv">
+    <table id="boardTable">
+      <tr>
+        <td onclick="cellPressed(this);"></td>
+        <td onclick="cellPressed(this);"></td>
+        <td onclick="cellPressed(this);"></td>
+      </tr>
+      <tr>
+        <td onclick="cellPressed(this);"></td>
+        <td onclick="cellPressed(this);"></td>
+        <td onclick="cellPressed(this);"></td>
+      </tr>
+      <tr>
+        <td onclick="cellPressed(this);"></td>
+        <td onclick="cellPressed(this);"></td>
+        <td onclick="cellPressed(this);"></td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="endGame" style="display:none;">
+    <p id="endGameText">  </p> <!-- You Win! -->
+    <button id="playAgainButton" onclick="replayGame();">Play Again!</a>
+  </div>
+</div>
